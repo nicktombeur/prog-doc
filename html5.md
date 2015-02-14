@@ -60,9 +60,6 @@ Same as script tag, no type needed.
 
 **HTML5 Elements**
 
-**
-**
-
 **Section**
 
 Represents a generic document or application section.
@@ -131,7 +128,7 @@ HTML4
 
 ```html
 <div class="sidebar">
-    _<!__-- ... -->_
+    <!-- ... -->
 </div>
 ```
 
@@ -204,7 +201,7 @@ HTML4
 
 ```html
 <div class="article">
-    _<!__-- ... -->_
+    <!-- ... -->
 </div>
 ```
 
