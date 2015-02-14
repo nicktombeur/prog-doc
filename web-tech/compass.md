@@ -2,6 +2,8 @@
 
   * [Help & Documentation](http://compass-style.org/help/)
 
+<br />
+
 Open-source CSS Authoring Framework.
 
 Adds reusable patterns, utilities, and modules like vertical rhythm and spriting.
@@ -72,7 +74,7 @@ Always be aware of the output!
 
 Contrast color returns a light or dark color based on an input color's lightness
 
-contrast-color(input-color, dark-color, light-color, threshold)
+> contrast-color(input-color, dark-color, light-color, threshold)
 
 Stretch outputs positioning for each side of a container
 
