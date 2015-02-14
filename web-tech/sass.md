@@ -442,7 +442,8 @@ Example:
 }
 .btn-b {
     @include button(#333, 4px);
-}```
+}
+```
 
 * * *
 
