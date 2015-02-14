@@ -13,3 +13,6 @@ Programming Documentation
 
 ###JVM
 - [Java](jvm/java.md "Java Documentation")
+
+###Version control
+- [Git](version-control/git.md "Git Documentation")
