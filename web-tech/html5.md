@@ -431,7 +431,8 @@ Represents the result of a calculation or user action.
     <input type="range" name="b" value="50" /> +
     <input type="number" name="a" value="10" /> =
     <output name="result"><./.output>
-</form>```
+</form>
+```
 
 IE not supported !
 
