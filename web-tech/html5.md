@@ -322,6 +322,7 @@ Looks just like a regular text input, but with added usability on mobile devices
 ```
 
 <br />
+
 **Date**
 
 Shows a date-picker.
@@ -329,6 +330,8 @@ Shows a date-picker.
 ```html
 <input type="date" />
 ```
+
+<br />
 
 **Number**
 
@@ -338,6 +341,8 @@ Shows increase/decrease-button.
 <input type="number" />
 ```
 
+<br />
+
 **Range**
 
 Shows a slider to change value.
@@ -345,6 +350,8 @@ Shows a slider to change value.
 ```html
 <input type="range" />
 ```
+
+<br />
 
 **Month/Week**
 
@@ -356,6 +363,8 @@ Show date-picker to select month/week.
 <input type="week" />
 ```
 
+<br />
+
 **Time/Datetime-local**
 
 Show increase/decrease-button to select time/datetime-local.
@@ -365,6 +374,8 @@ Show increase/decrease-button to select time/datetime-local.
 
 <input type="datetime-local" />
 ```
+
+<br />
 
 **Color**
 
@@ -393,6 +404,8 @@ Looks like normal text but gives auto-complete suggestions.
 </datalist>
 ```
 
+<br />
+
 **Keygen**
 
 Specifies a key-pair generator field used for forms.
@@ -406,6 +419,8 @@ When the form is submitted, the private key is stored locally, and the public ke
 [More information.](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/keygen)
 
 IE not supported !
+
+<br />
 
 **Output**
 
@@ -430,6 +445,8 @@ Allows you to specify a message that is shown inside the input, hidden when user
 <input type="text" placeholder="Enter your email ..." />
 ```
 
+<br />
+
 **Autofocus**
 
 Automatically focus the specified input when the page is rendered.
@@ -437,6 +454,8 @@ Automatically focus the specified input when the page is rendered.
 ```html
 <input type="text" autofocus />
 ```
+
+<br />
 
 **Autocomplete**
 
@@ -450,6 +469,8 @@ Works with form, text, search, url, tel, email, password, datepickers, range, an
 <input type="text" name="email" autocomplete="on">
 ```
 
+<br />
+
 **Required**
 
 When the form is submitted, the user will be notified of an error if the field is left blank.
@@ -457,6 +478,8 @@ When the form is submitted, the user will be notified of an error if the field i
 ```html
 <input type="text" required />
 ```
+
+<br />
 
 **Pattern**
 
@@ -466,9 +489,13 @@ Accepts a JavaScript regular expression that can be used to validate a form fiel
 <input type="text" pattern="[0-9]{3}" />
 ```
 
+<br />
+
 **List**
 
 See form element: datalist.
+
+<br />
 
 **Multiple**
 
@@ -480,6 +507,8 @@ Works with the following input types: email, and file.
 <input type="file" name="img" multiple>
 ```
 
+<br />
+
 **novalidate**
 
 Specifies that the form-data (input) should not be validated when submitted.
@@ -487,6 +516,8 @@ Specifies that the form-data (input) should not be validated when submitted.
 ```html
 <form novalidate><./.form>
 ```
+
+<br />
 
 **formnovalidate**
 
@@ -497,6 +528,8 @@ The formvalidate attribute overrides the novalidate attribute of the form-elemen
 ```html
 <input formnovalidate>
 ```
+
+<br />
 
 **form**
 
@@ -511,6 +544,8 @@ Use a space-separated list of form ids.
 
 <input type="text" form="form1">
 ```
+
+<br />
 
 **formaction**
 
@@ -527,6 +562,8 @@ Can be used with submit and image.
 </form>
 ```
 
+<br />
+
 **formenctype**
 
 Specifies how the form-data should be encoded when submitting it to the server (only for forms with method="post").
@@ -539,6 +576,8 @@ Can be used with submit and image.
 <input type="submit" formenctype="multipart/form-data">
 ```
 
+<br />
+
 **formmethod**
 
 Defines the HTTP method for sending form-data to the action URL.
@@ -550,6 +589,8 @@ Can be used with submit and image.
 ```html
 <input type="submit" formmethod="post" formaction="URL">
 ```
+
+<br />
 
 **formtarget**
 
