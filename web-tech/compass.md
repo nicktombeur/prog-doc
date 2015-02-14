@@ -78,13 +78,13 @@ Contrast color returns a light or dark color based on an input color's lightness
 
 Stretch outputs positioning for each side of a container
 
-+stretch(top, right, bottom, left)
+> +stretch(top, right, bottom, left)
 
 Image dimensions
 
-height: image-height('a.png')
+> height: image-height('a.png')
 
-width: image-width('a.png')
+> width: image-width('a.png')
 
 Use inline-image to base64 embed images into CSS.
 
@@ -94,7 +94,7 @@ It embeds the image into CSS (no more loading flash).
 
 IE8+ (max 32KB), good mobile support
 
-background: inline-image('a.png')
+> background: inline-image('a.png')
 
 <br />
 
