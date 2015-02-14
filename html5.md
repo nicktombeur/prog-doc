@@ -4,17 +4,15 @@ Useful links:
   * [MDN (Mozilla Developer Network)](https://developer.mozilla.org/en-US/docs/Web/HTML)
   * [Can I use ____ ?](http://caniuse.com/)
 
+<br />
+
 Traditionally presentational tags, the i, b, em and strong tags have been given new semantic meanings.
 
 HTML4
-
   * **i tag** rendered an **italic** font style
   * **b tag** rendered a **bold** font style
   * **em tag** meant **emphasis**
   * **strong tag** meant **strong emphasis**
-
-**
-**
 
 HTML5
 
@@ -24,17 +22,11 @@ HTML5
 <p><i>I hope this works</i>, he thought.</p>
 ```
 
-**
-**
-
 **b tag** represents **"stylistically offset"** text
 
 ```html
 <p><b class="lead">The event takes place this upcoming Saturday, and over 3,000 people have already registered.</b></p>
 ```
-
-**
-**
 
 **em tag** now means **"stress emphasis"**
 
@@ -42,17 +34,11 @@ HTML5
 <p>Make sure to sign up <em>before</em> the day of the event, September 16, 2013.</p>
 ```
 
-**
-**
-
 **strong tag** now means **"strong importance"**
 
 ```html
 <p>Make sure to sign up <em>before</em> the day of the event, <strong>September 16, 2013</strong>.</p>
 ```
-
-**
-**
 
 **Script tag**
 
@@ -62,23 +48,15 @@ No type attribute needed.
 <script src="file.js"></script>
 ```
 
-**
-**
-
 **Link tag**
 
 Same as script tag, no type needed.
 
 ```html
-<link rel="stylesheet" href="file.css">```
-
-**
-**
+<link rel="stylesheet" href="file.css">
+```
 
 * * *
-
-**
-**
 
 **HTML5 Elements**
 
@@ -118,9 +96,6 @@ HTML5
 </header>
 ```
 
-**
-**
-
 **Footer**
 
 The footer element represents a footer for its nearest ancestor sectioning content or sectioning root element.
@@ -142,9 +117,6 @@ HTML5
     <!-- ... -->
 </footer>
 ```
-
-**
-**
 
 **Aside**
 
@@ -189,9 +161,6 @@ Example using aside within a section:
 </section>
 ```
 
-**
-**
-
 **Nav**
 
 The nav element represents a section of a page that links to other pages or to parts within the page: a section with navigation links.
@@ -213,9 +182,6 @@ HTML5
     </ul>
 </nav>
 ```
-
-**
-**
 
 **Article**
 
@@ -250,9 +216,6 @@ HTML5
 </article>
 ```
 
-**
-**
-
 **Main**
 
 The main element represents the main content of the body of a document or application.
@@ -278,9 +241,6 @@ HTML5
 </main>
 ```
 
-**
-**
-
 **Figure/figcaption**
 
 A common use of the figure tag is for an image within an article:
@@ -291,9 +251,6 @@ A common use of the figure tag is for an image within an article:
     <figcaption>This is a caption for the picture.</figcaption>
 </figure>
 ```
-
-**
-**
 
 **Time**
 
@@ -311,34 +268,19 @@ We use the datetime attribute to get our desired format:
 <time datetime="2013-09-16">09/16/2013</time>
 ```
 
-**
-**
-
 * * *
 
-**
-**
-
 **HTML5 Forms**
-
-**
-**
 
 **New input types**
 
 If a browser doesn't support the input type, it defaults to "text".
-
-**
-**
 
 **Search**
 
 ```html
 <input type="search" />
 ```
-
-**
-**
 
 **Email/URL/tel**
 
@@ -368,9 +310,6 @@ Shows increase/decrease-button.
 <input type="number" />
 ```
 
-**
-**
-
 **Range**
 
 Shows a slider to change value.
@@ -378,9 +317,6 @@ Shows a slider to change value.
 ```html
 <input type="range" />
 ```
-
-**
-**
 
 **Month/Week**
 
@@ -391,9 +327,6 @@ Show date-picker to select month/week.
 
 <input type="week" />
 ```
-
-**
-**
 
 **Time/Datetime-local**
 
@@ -432,9 +365,6 @@ Looks like normal text but gives auto-complete suggestions.
 </datalist>
 ```
 
-**
-**
-
 **Keygen**
 
 Specifies a key-pair generator field used for forms.
@@ -472,9 +402,6 @@ Allows you to specify a message that is shown inside the input, hidden when user
 <input type="text" placeholder="Enter your email ..." />
 ```
 
-**
-**
-
 **Autofocus**
 
 Automatically focus the specified input when the page is rendered.
@@ -482,9 +409,6 @@ Automatically focus the specified input when the page is rendered.
 ```html
 <input type="text" autofocus />
 ```
-
-**
-**
 
 **Autocomplete**
 
@@ -498,9 +422,6 @@ Works with form, text, search, url, tel, email, password, datepickers, range, an
 <input type="text" name="email" autocomplete="on">
 ```
 
-**
-**
-
 **Required**
 
 When the form is submitted, the user will be notified of an error if the field is left blank.
@@ -508,9 +429,6 @@ When the form is submitted, the user will be notified of an error if the field i
 ```html
 <input type="text" required />
 ```
-
-**
-**
 
 **Pattern**
 
@@ -520,15 +438,9 @@ Accepts a JavaScript regular expression that can be used to validate a form fiel
 <input type="text" pattern="[0-9]{3}" />
 ```
 
-**
-**
-
 **List**
 
 See form element: datalist.
-
-**
-**
 
 **Multiple**
 
@@ -540,9 +452,6 @@ Works with the following input types: email, and file.
 <input type="file" name="img" multiple>
 ```
 
-**
-**
-
 **novalidate**
 
 Specifies that the form-data (input) should not be validated when submitted.
@@ -550,9 +459,6 @@ Specifies that the form-data (input) should not be validated when submitted.
 ```html
 <form novalidate><./.form>
 ```
-
-**
-**
 
 **formnovalidate**
 
@@ -563,9 +469,6 @@ The formvalidate attribute overrides the novalidate attribute of the form-elemen
 ```html
 <input formnovalidate>
 ```
-
-**
-**
 
 **form**
 
@@ -580,9 +483,6 @@ Use a space-separated list of form ids.
 
 <input type="text" form="form1">
 ```
-
-**
-**
 
 **formaction**
 
@@ -599,9 +499,6 @@ Can be used with submit and image.
 </form>
 ```
 
-**
-**
-
 **formenctype**
 
 Specifies how the form-data should be encoded when submitting it to the server (only for forms with method="post").
@@ -614,9 +511,6 @@ Can be used with submit and image.
 <input type="submit" formenctype="multipart/form-data">
 ```
 
-**
-**
-
 **formmethod**
 
 Defines the HTTP method for sending form-data to the action URL.
@@ -628,9 +522,6 @@ Can be used with submit and image.
 ```html
 <input type="submit" formmethod="post" formaction="URL">
 ```
-
-**
-**
 
 **formtarget**
 
