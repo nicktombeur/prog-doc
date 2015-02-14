@@ -6,9 +6,9 @@ Attributes that influence design
   * Tone (casual, formal)
   * Purpose
 
-**Typography**
-
 <br />
+
+**Typography**
 
 Serif:
 
@@ -41,8 +41,6 @@ But keep in mind:
   * find a similar trait
 
 **Font size**
-
-<br />
 
 Start with body copy size (suggestion: 16px), then decide the size of the headline (200-300% of the body copy). Sub-head can be around 150% and the navigation around 100%.
 
