@@ -5,8 +5,7 @@
 
 Always, always check the CSS output of your Sass before using it on a live site.
 
-**
-**
+<br />
 
 **Comments**
 
@@ -20,8 +19,7 @@ Always, always check the CSS output of your Sass before using it on a live site.
 /* This comment will */
 ```
 
-**
-**
+<br />
 
 **Import**
 
@@ -29,8 +27,7 @@ The CSS @import has been avoided because of parallel downloading.
 
 @import with .scss or .sass happens during compile rather than client-side.
 
-**
-**
+<br />
 
 **Partial**
 
@@ -44,8 +41,7 @@ Partials can be imported, but will not compile to .css.
 
 Note: you don't have to write the underscore in the import statement.
 
-**
-**
+<br />
 
 **Nesting selectors**
 
@@ -78,7 +74,8 @@ Example:
     &.callout {
         /* ... */
     }
-}```
+}
+```
 
 compiles to:
 
@@ -115,8 +112,7 @@ Example:
 }
 ```
 
-**
-**
+<br />
 
 **Nesting properties**
 
@@ -146,8 +142,7 @@ Nesting is easy, but dangerous. Do not nest unnecessarily.
 
 Try limiting your nesting to 3 or 4 levels and consider refactoring anything deeper.
 
-**
-**
+<br />
 
 **Variables**
 
@@ -219,8 +214,7 @@ sup {
 }
 ```
 
-**
-**
+<br />
 
 **Lists**
 
@@ -239,8 +233,7 @@ sup {
 
 Note: lists are 1-based, not zero-based.
 
-**
-**
+<br />
 
 **Mixin**
 
@@ -299,8 +292,7 @@ $properties: 4px, #000;
 }
 ```
 
-**
-**
+<br />
 
 **Extend**
 
@@ -341,8 +333,7 @@ Pitfalls:
   * Stylesheet bloat, if these extra styles aren't needed
   * We can counteract with placeholder selectors
 
-**
-**
+<br />
 
 **Placeholder selectors**
 
@@ -369,8 +360,7 @@ Are denoted with a %. They can be extended, but never become a selector of their
 
 Tip: Versions of IE prior to 9 have a limit of 4095 selectors-per-CSS file limit.
 
-**
-**
+<br />
 
 **Directive**
 
@@ -467,8 +457,7 @@ When to use:
 
 * * *
 
-**
-**
+<br />
 
 **Number Operations**
 
@@ -486,8 +475,7 @@ When to use:
 
 Tip: Sass defaults to returning (up to) five digits after a decimal point.
 
-**
-**
+<br />
 
 **Pre-defined math utilities**
 
@@ -500,8 +488,7 @@ Tip: Sass defaults to returning (up to) five digits after a decimal point.
   * percentage($number) - convert to percentage
     * Tip: can be used for our fluid calculation (see Mobile). > percentage(target / context);
 
-**
-**
+<br />
 
 **Color**
 
@@ -562,8 +549,7 @@ Keywords:
   * $lightness
   * $alpha
 
-**
-**
+<br />
 
 **Responsive**
 
@@ -593,8 +579,7 @@ Responsive pitfalls
 
 * * *
 
-**
-**
+<br />
 
 **Indented syntax**
 
