@@ -22,11 +22,15 @@ HTML5
 <p><i>I hope this works</i>, he thought.</p>
 ```
 
+<br />
+
 **b tag** represents **"stylistically offset"** text
 
 ```html
 <p><b class="lead">The event takes place this upcoming Saturday, and over 3,000 people have already registered.</b></p>
 ```
+
+<br />
 
 **em tag** now means **"stress emphasis"**
 
@@ -34,11 +38,15 @@ HTML5
 <p>Make sure to sign up <em>before</em> the day of the event, September 16, 2013.</p>
 ```
 
+<br />
+
 **strong tag** now means **"strong importance"**
 
 ```html
 <p>Make sure to sign up <em>before</em> the day of the event, <strong>September 16, 2013</strong>.</p>
 ```
+
+<br />
 
 **Script tag**
 
@@ -47,6 +55,8 @@ No type attribute needed.
 ```html
 <script src="file.js"></script>
 ```
+
+<br />
 
 **Link tag**
 
@@ -69,6 +79,8 @@ Section vs. div
   * A div has no semantic meaning, but the section element does. It's used for grouping together thematically related content.
 
 Ask yourself, "Is all of the content related?". If the answer is yes, you can use section.
+
+<br />
 
 **Header**
 
@@ -93,6 +105,8 @@ HTML5
 </header>
 ```
 
+<br />
+
 **Footer**
 
 The footer element represents a footer for its nearest ancestor sectioning content or sectioning root element.
@@ -114,6 +128,8 @@ HTML5
     <!-- ... -->
 </footer>
 ```
+
+<br />
 
 **Aside**
 
@@ -158,6 +174,8 @@ Example using aside within a section:
 </section>
 ```
 
+<br />
+
 **Nav**
 
 The nav element represents a section of a page that links to other pages or to parts within the page: a section with navigation links.
@@ -179,6 +197,8 @@ HTML5
     </ul>
 </nav>
 ```
+
+<br />
 
 **Article**
 
@@ -213,6 +233,8 @@ HTML5
 </article>
 ```
 
+<br />
+
 **Main**
 
 The main element represents the main content of the body of a document or application.
@@ -238,6 +260,8 @@ HTML5
 </main>
 ```
 
+<br />
+
 **Figure/figcaption**
 
 A common use of the figure tag is for an image within an article:
@@ -248,6 +272,8 @@ A common use of the figure tag is for an image within an article:
     <figcaption>This is a caption for the picture.</figcaption>
 </figure>
 ```
+
+<br />
 
 **Time**
 
@@ -273,11 +299,15 @@ We use the datetime attribute to get our desired format:
 
 If a browser doesn't support the input type, it defaults to "text".
 
+<br />
+
 **Search**
 
 ```html
 <input type="search" />
 ```
+
+<br />
 
 **Email/URL/tel**
 
@@ -291,6 +321,7 @@ Looks just like a regular text input, but with added usability on mobile devices
 <input type="tel" />
 ```
 
+<br />
 **Date**
 
 Shows a date-picker.
