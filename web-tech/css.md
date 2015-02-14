@@ -42,6 +42,8 @@ Margin can be used to adjust spacing between containers.
   * Inline-level tags (eg. img):
     * `display: block; margin: 0 auto;`
 
+<br />
+
 **Clearing floats**
 
 The clearfix:
@@ -59,11 +61,15 @@ The clearfix:
 }
 ```
 
+<br />
+
 **Priority of a selector (specificity)**
 
 important < inline-css < id < class < element
 
 Advised: keep amount of id's low. ([article](http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/))
+
+<br />
 
 **Positioning**
 
@@ -82,11 +88,15 @@ Positioned elements may use the top, left, bottom, and right properties for plac
   * Fixed
     * Affixes an element to a specific place in the window, where it will stay regardless of scrolling.
 
+<br />
+
 **z-index**
 
 Elements must be positioned for z-index to take effect. Use relative if you're not interested in moving the object.
 
 [Understanding z-index](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Understanding_z_index)
+
+<br />
 
 **DRY**
 
@@ -119,6 +129,8 @@ Don't Repeat Yourself.
 
 Remember: order matters here (cascading)!
 
+<br />
+
 **Display types**
 
   * Block elements
@@ -136,14 +148,20 @@ Remember: order matters here (cascading)!
       * no default display type
   * [And more...](http://www.w3schools.com/cssref/pr_class_display.asp)
 
+<br />
+
 **Collapsing Margins**
 
 [More information.](http://www.w3.org/TR/CSS2/box.html#collapsing-margins)
+
+<br />
 
 **Image use**
 
   * Content should be marked up as inline images
   * Layout elements should be defined as background images
+
+<br />
 
 **Sprites**
 
@@ -178,6 +196,8 @@ Useful tool: [spritecow](http://www.spritecow.com/).
 
 Alternative to sprites: [base64 encoding](http://davidbcalhoun.com/2011/when-to-base64-encode-images-and-when-not-to/).
 
+<br />
+
 **Pseudo classes**
 
 Allow you to conditionally select an element based on state or position.
@@ -191,6 +211,8 @@ Examples:
 
 Article: [Meet the Pseudo Classes Selectors](http://css-tricks.com/pseudo-class-selectors/)
 
+<br />
+
 **Pseudo elements**
 
   * :before / :after
@@ -199,6 +221,8 @@ Article: [Meet the Pseudo Classes Selectors](http://css-tricks.com/pseudo-class-
   * ...
 
 Article: [A Whole Bunch of Amazing Stuff Pseudo Elements Can Do](http://css-tricks.com/pseudo-element-roundup/)
+
+<br />
 
 **CSS3**
 
@@ -219,6 +243,8 @@ text-shadow:
 
 * = optional
 
+<br />
+
 **Box Sizing**
 
   * Context-box
@@ -233,9 +259,13 @@ e.g.
 
 box-sizing: border-box;
 
+<br />
+
 **Multiple backgrounds**
 
 background: url(bg1.png) top left no-repeat, url(bg2.png) center right no-repeat;
+
+<br />
 
 **Gradients**
 
@@ -275,6 +305,8 @@ e.g. background: radial-gradient(aqua, blue);
 
 e.g. background: radial-gradient(circle at top left, aqua, blue);
 
+<br />
+
 **Font face**
 
 Example:
@@ -289,6 +321,8 @@ Example:
 ```
 
 use: `font-family: 'OpenSansRegular';`
+
+<br />
 
 **Transform**
 
@@ -305,6 +339,8 @@ use: `font-family: 'OpenSansRegular';`
   * skew
     * transform: skewX(`<ax>`);
     * transform: skewY(`<ay>`);
+
+<br />
 
 **Transitions**
 
