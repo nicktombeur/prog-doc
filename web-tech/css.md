@@ -5,6 +5,8 @@
 
   * [css-tricks](http://css-tricks.com/)
 
+<br />
+
 Reset default browser styles, before styling. 
 
 Example:
@@ -39,9 +41,6 @@ Margin can be used to adjust spacing between containers.
     * `margin: 0 auto;`
   * Inline-level tags (eg. img):
     * `display: block; margin: 0 auto;`
-
-`
-`
 
 **Clearing floats**
 
@@ -290,11 +289,6 @@ Example:
 ```
 
 use: `font-family: 'OpenSansRegular';`
-
-`
-`
-
-` `
 
 **Transform**
 
