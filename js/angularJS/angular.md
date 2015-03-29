@@ -115,9 +115,9 @@ Dash in HTML translates to camelCase in JavaScript.
 
 Examples:
 - An attribute directive
-	- <h3 example-title></h3>
+	- ```html <h3 example-title></h3>```
 - An element directive
-	- <h3><example-title></example-title></h3>
+	- ```html <h3><example-title></example-title></h3>```
 
 ##Dependencies
 
@@ -137,6 +137,7 @@ Always use the array syntax for DI!
 (function() {
 	var app = angular.module('example-store', []);
 })();
+```
 
 ##Built-in Services
 
