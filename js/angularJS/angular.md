@@ -1,8 +1,10 @@
-Angular
+#Angular
 
-Module
+##Module
 
-https://docs.angularjs.org/guide/module
+[Developer Guide](https://docs.angularjs.org/guide/module)
+
+*Example:*
 
 ```javascript
 var app = angular.module('app', []);
@@ -20,9 +22,11 @@ var app = angular.module('app', []);
 </html>
 ```
 
-Controller
+##Controller
 
-https://docs.angularjs.org/guide/controller
+[Developer Guide](https://docs.angularjs.org/guide/controller)
+
+*Example:*
 
 ```javascript
 (function() {
@@ -45,11 +49,11 @@ Name of the controller should always:
 - Be in capital case
 - End with the word 'Controller'
 
-Built-in Directives
+##Built-in Directives
 
-https://docs.angularjs.org/api/ng/directive
+[Developer Guide](https://docs.angularjs.org/api/ng/directive)
 
-Example:
+*Example:*
 
 ```html
 <p ng-show="exampleCtrl.message.visible">{{exampleCtrl.message.text}}</p>
@@ -62,22 +66,22 @@ var message = {
 }
 ```
 
-Filters
+##Filters
 
-https://docs.angularjs.org/guide/filter
+[Developer Guide](https://docs.angularjs.org/guide/filter)
 
-Example:
+*Example:*
 
 Format into currency.
 ```html
 <p>{{product.price | currency}}</p>
 ```
 
-Forms
+##Forms
 
-https://docs.angularjs.org/guide/forms
+[Developer Guide](https://docs.angularjs.org/guide/forms)
 
-Example:
+*Example:*
 
 ```html
 <form name="userForm" ng-submit="userForm.$valid && exampleCtrl.add(user)" novalidate>
@@ -100,14 +104,14 @@ app.controller('ExampleController', function() {
 Styling form validation:
 https://docs.angularjs.org/guide/css-styling
 
-Directives
+##Directives
+
+[Developer Guide](https://docs.angularjs.org/guide/directive)
 
 To prevent code duplication you can use ng-include.
 But it's better to use a custom Directive.
 
-https://docs.angularjs.org/guide/directive
-
-dash in HTML translates to camelCase in JavaScript.
+Dash in HTML translates to camelCase in JavaScript.
 
 Examples:
 - An attribute directive
@@ -115,13 +119,13 @@ Examples:
 - An element directive
 	- <h3><example-title></example-title></h3>
 
-Dependencies
+##Dependencies
 
-https://docs.angularjs.org/guide/di
+[Developer Guide](https://docs.angularjs.org/guide/di)
 
 Always use the array syntax for DI!
 
-Example:
+*Example:*
 
 ```javascript
 (function() {
@@ -134,9 +138,9 @@ Example:
 	var app = angular.module('example-store', []);
 })();
 
-Built-in Services
+##Built-in Services
 
-https://docs.angularjs.org/api/ng/service
+[Developer Guide](https://docs.angularjs.org/api/ng/service)
 
 All built-in Services start with a $ sign.
 
