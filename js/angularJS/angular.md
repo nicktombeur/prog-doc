@@ -153,4 +153,38 @@ Examples:
 
 Both return a Promise object with .succes() and .error()
 
+##Routing
+
+###ngRoute
+
+[Developer Guide](https://docs.angularjs.org/api/ngRoute)
+
+```html
+<div ng-view></div>
+```
+
+```javascript
+angular.module('ExampleApp')
+.config(['$routeProvider', function($routeProvider) {
+	$routeProvider.when('/', {
+		templateUrl: 'templates/index.html',
+		controller: 'IndexController',
+		controllerAs: 'indexCtrl'
+	})
+	.when('/list', {
+    	templateUrl: 'templates/list.html',
+    	controller: 'ListController',
+    	controllerAs: 'listCtrl'
+    })
+    .when('/detail', {
+    	templateUrl: 'templates/detail.html',
+    	controller: 'DetailController',
+    	controllerAs: 'detailCtrl'
+    })
+    .otherwise({
+    	redirectTo: '/'
+    });
+}]);
+```
+
 More soon...
