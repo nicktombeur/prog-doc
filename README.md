@@ -4,12 +4,12 @@ Programming Documentation
 ##Table of Contents:
 
 ###Web technologies
-- [HTML5](web-tech/html5.md "HTML5 Documentation")
-- [CSS](web-tech/css.md "CSS Documentation")
-  - [Mobile](web-tech/css-mobile.md "CSS Mobile Documentation")
-  - [SASS](web-tech/sass.md "SASS Documentation")
-    - [Compass](web-tech/compass.md "Compass Documentation")
-  - [Design](web-tech/design.md "Design Documentation")
+- [HTML5](web-tech/html/html5.md "HTML5 Documentation")
+- [CSS](web-tech/css/css.md "CSS Documentation")
+  - [Mobile](web-tech/css/css-mobile.md "CSS Mobile Documentation")
+  - [SASS](web-tech/css/sass.md "SASS Documentation")
+    - [Compass](web-tech/css/compass.md "Compass Documentation")
+  - [Design](web-tech/css/design.md "Design Documentation")
 - JavaScript
   - [AngularJS](js/angularJS/angular.md "AngularJS Documentation")
 
