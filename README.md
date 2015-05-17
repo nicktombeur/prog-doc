@@ -11,7 +11,8 @@ Programming Documentation
     - [Compass](web-tech/css/compass.md "Compass Documentation")
   - [Design](web-tech/css/design.md "Design Documentation")
 - JavaScript
-  - [AngularJS](js/angularJS/angular.md "AngularJS Documentation")
+  - [Web Framework Comparisons](web-tech/js/web-frame-comp.md "Web Framework Comparisons")
+  - [AngularJS](web-tech/js/angularJS/angular.md "AngularJS Documentation")
 
 ###JVM
 - [Java](jvm/java.md "Java Documentation")
