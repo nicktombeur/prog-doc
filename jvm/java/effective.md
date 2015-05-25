@@ -9,11 +9,11 @@
 - Unlike constructors, they are not required to create a new object each time they're invoked.
 - Unlike constructors, they can return an object of any subtype of their return type.
 - They reduce the verbosity of creating parameterized type instances.
-    - Map<String, List<String>> m = new HashMap<String, List<String>>();  
+    - ``` Map<String, List<String>> m = new HashMap<String, List<String>>();```  
         With static factories the compiler can figure out the type parameters for you (Type Inference).  
-        - Map<String, List<String>> m = HashMap.newInstance();  
-Note: Java 7 introduced type inference through the use of the diamond operator.  
-    - Map<String, List<String>> m = new HashMap<>();
+        - ``` Map<String, List<String>> m = HashMap.newInstance();```  
+        Note: Java 7 introduced type inference through the use of the diamond operator.  
+            - ``` Map<String, List<String>> m = new HashMap<>();```
 
 **Disadvantages:**
 - The main disadvantage of providing only static factory methods is that classes without public or protected constructors cannot be subclassed.
@@ -32,16 +32,16 @@ Static factory methods and public constructors both have their uses. Avoid the r
  
 ### Consider a builder when faced with many constructor parameters
 
-Telescoping constructor pattern = You provide a constructor with only the required parameters, another with a single optional parameter, a third with two optional parameters, and so on, culminating in a constructor with all the optional parameters.  
+**Telescoping constructor pattern** = You provide a constructor with only the required parameters, another with a single optional parameter, a third with two optional parameters, and so on, culminating in a constructor with all the optional parameters.  
 This works but it is hard to write client code when there are many parameters, and harder still to read it.
 
-JavaBeans pattern = you call a parameterless constructor to create the object and then call setter methods to set each required parameter and each optional parameter of interest.  
+**JavaBeans pattern** = you call a parameterless constructor to create the object and then call setter methods to set each required parameter and each optional parameter of interest.  
 Disadvantages:
 - A JavaBean may be in an inconsistent state partway through its construction.
 - Precludes the possibility of making a class immutable.
 - Required added effort to ensure thread safety.
 
-Solution:  
+**Solution:**  
 A form of the Builder pattern.
 
 Example:
