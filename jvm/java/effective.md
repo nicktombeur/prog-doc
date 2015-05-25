@@ -1,5 +1,7 @@
 # Effective Java (Joshua Bloch)
 
+Joshua Bloch, Effective Java, 2nd Edition. Copyright 2008 Sun Microsystems, Inc.
+
 ## Creating and Destroying Objects
 
 ### Consider static factory methods instead of constructors
@@ -115,3 +117,101 @@ NutritionFacts cocaCola = new NutritionFacts.Builder(240, 8).calories(100).sodiu
 
 **Summary:**  
 The Builder pattern is a good choice when designing classes whose constructors or static factories would have more than a handful of parameters, especially if most of those parameters are optional.
+
+### Enforce the singleton property with a private constructor or an enum type
+
+*Singleton*  
+A class that instantiated exactly once.  
+Making a class a singleton can make it difficult to test its clients.
+
+Before release 1.5, there were two ways to implement singletons.
+
+```java
+// Singleton with public final field
+public class Elvis {
+    public static final Elvis INSTANCE = new Elvis();
+    private Elvis() { ... }
+    
+    public void leaveTheBuilding() { ... }
+```
+
+Advantage:
+- The declarations make it clear that the class is a singleton.
+- Simpler
+
+One caveat: a privileged client can invoke the private constructor reflectively with the aid of the AccessibleObject.setAccessible method.  
+If you need to defend against this attack, modify the constructor to make it throw an exception if it's asked to create a second instance.
+
+```java
+// Singleton with static factory
+public class Elvis {
+    private static final Elvis INSTANCE = new Elvis();
+    private Elvis() { ... }
+    public static Elvis getInstance() { return INSTANCE; }
+    
+    public void leaveTheBuilding() { ... }
+}
+```
+
+Advantage:
+- Gives you the flexibility to change your mind about whether the class should be a singleton without changing its API.
+
+Has the same caveat mentioned above.
+
+To make a singleton class serializable, it is not sufficient merely to add implements Serializable to its declaration.  
+To maintain the singleton guarantee, you have to declare all instance fields *transient* and provide a *readResolve* method.  
+Otherwise, each time a serialized instance is deserialized, a new instance will be created.
+
+```java
+// readResolve method to preserve singleton property
+private Object readResolve() {
+    return INSTANCE;
+}
+```
+
+As of release 1.5, there is a third approach to implementing singletons. Simply make an enum type with one element:
+
+```java
+// Enum singleton - the preferred approach
+public enum Elvis {
+    INSTANCE;
+    
+    public void leaveTheBuilding() { ... }
+}
+```
+
+Advantages:
+- More concise
+- Provides the serialization machinery for free
+- Provides an ironclad guarantee against multiple instantiation
+
+**Summary:**  
+A single-element enum type is the best way to implement a singleton.
+
+### Enforce noninstantiability with a private constructor
+
+A class that is just a grouping of static methods and static fields do have valid uses.
+Such *utility classes* were not designed to be instantiated: an instance would be nonsensical.
+
+**Attempting to enforce noninstantiability by making a class abstract does not work.** The class can be subclassed and the subclass instantiated.
+Furthermore, it misleads the user into thinking the class was designed for inheritance.
+
+**A class can be made noninstantiable by including a private constructor**
+
+```java
+// Noninstantiable utility class
+public class UtilityClass {
+    // Suppress default constructor for noninstantiability
+    private UtilityClass() {
+        throw new AssertionError();
+    }
+    ... // Remainder omitted
+}
+```
+
+The AssertionError isn't strictly required, but it provides insurance in case the constructor is accidentally invoked from within the class.  
+It is wise to include a comment on the constructor.  
+Side effect: this prevents the class from being subclassed.
+
+### Avoid creating unnecessary objects
+
