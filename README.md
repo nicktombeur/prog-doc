@@ -16,7 +16,7 @@ Programming Documentation
 
 ###JVM
 - [Java](jvm/java/java.md "Java Documentation")
-  - [Effective Java](jvm/java/effective.md "Effective Java")
+  - [Effective Java](jvm/java/effective "Effective Java")
 
 ###Version control
 - [Git](version-control/git.md "Git Documentation")
