@@ -1,0 +1,8 @@
+# intellij
+*.eml
+*.iml
+*.ipr
+*.iws
+.*.sw?
+.idea
+.idea_modules
