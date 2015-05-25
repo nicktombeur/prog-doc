@@ -9,11 +9,11 @@
 - Unlike constructors, they are not required to create a new object each time they're invoked.
 - Unlike constructors, they can return an object of any subtype of their return type.
 - They reduce the verbosity of creating parameterized type instances.
-    - Map<String, List<String>> m = new HashMap<String, List<String>>();
-        With static factories the compiler can figure out the type parameters for you (Type Inference).
-        - Map<String, List<String>> m = HashMap.newInstance();
-        Note: Java 7 introduced type inference through the use of the diamond operator.
-        - Map<String, List<String>> m = new HashMap<>();
+    - Map<String, List<String>> m = new HashMap<String, List<String>>();  
+        With static factories the compiler can figure out the type parameters for you (Type Inference).  
+        - Map<String, List<String>> m = HashMap.newInstance();  
+Note: Java 7 introduced type inference through the use of the diamond operator.  
+    - Map<String, List<String>> m = new HashMap<>();
 
 **Disadvantages:**
 - The main disadvantage of providing only static factory methods is that classes without public or protected constructors cannot be subclassed.
